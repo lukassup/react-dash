@@ -1,0 +1,30 @@
+.DashboardList {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.DashboardList.Alert {
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.DashboardList.Alert.Host {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+.DashboardList a {
+  box-sizing: border-box;
+  padding: 0.5em 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.DashboardList a:hover {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}

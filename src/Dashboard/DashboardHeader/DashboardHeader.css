@@ -1,0 +1,24 @@
+.DashboardHeader {
+  color: hsla(0, 0%, 100%, 0.95);
+  text-align: center;
+  font-size: 3em;
+  padding: 0.333em 0;
+}
+
+.DashboardHeader > :not(:last-child) {
+  margin-right: 0.5em;
+}
+
+.DashboardTitle {
+  text-transform: uppercase;
+}
+
+.DashboardCount {
+  font-weight: bold;
+}
+
+.DashboardHeader > .Alert.Host {
+  padding: 0 0.1em;
+  border-radius: 2px;
+}
+

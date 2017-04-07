@@ -1,0 +1,57 @@
+.Dashboard {
+  background-color: hsla(0, 0%, 100%, 0.075);
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 960px) {
+  .Dashboard {
+    background-color: hsla(0, 0%, 100%, 0.075);
+    float: left;
+    width: 48.5%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+
+  .Dashboard:nth-of-type(odd) {
+    margin-left: 1%;
+    margin-right: 0.5%;
+  }
+
+  .Dashboard:nth-of-type(even) {
+    margin-left: 0.5%;
+    margin-right: 1%;
+  }
+}
+
+
+.DashboardHeader > .Alert.Host.Active {
+  background-color: hsla(354, 88%, 56%, 0.95);
+}
+
+.DashboardHeader > .Alert.Service.Critical.Active,
+.DashboardList > .Alert.Host,
+.DashboardList > .Alert.Service.Critical {
+  color: hsla(354, 88%, 56%, 0.95);
+}
+
+.DashboardHeader > .Alert.Service.Warning.Active,
+.DashboardList > .Alert.Service.Warning {
+  color: hsla(16, 75%, 50%, 0.95);
+}
+
+.DashboardHeader > .Alert.Service.Unknown.Active,
+.DashboardList > .Alert.Service.Unknown {
+  color: hsla(38, 78%, 43%, 0.95);
+}
+
+.DashboardList.Alert.Host {
+  border-top-color: hsla(354, 88%, 56%, 0.8);
+  border-bottom-color: hsla(354, 88%, 56%, 0.8);
+}
